@@ -1,123 +1,436 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+	<div class="header">
+		<div class="header1">
+		  <div class="main-nav">
+			<button class="home">Home</button>
+			<img
+			  class="logo-samtone-ind-main-icon"
+			  alt=""
+			  src="/public/logo-samtone-ind-main@2x.png"
 			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+  
+			<button class="company">
+			  <div class="company1">Companys</div>
+			  <img class="company-child" alt="" src="./public/vector-4.svg" />
+			</button>
+			<button class="products">
+			  <div class="products1">Products</div>
+			  <img class="products-child" alt="" src="./public/vector-4.svg" />
+			</button>
+			<button class="applications">
+			  <div class="applications1">Applications</div>
+			  <img
+				class="applications-child"
+				alt=""
+				src="./public/vector-4.svg"
+			  />
+			</button>
+			<button class="contactus">
+			  <div class="contact-us">Contact US</div>
+			  <img class="contactus-child" alt="" src="./public/vector-4.svg" />
+			</button>
+			<button class="search">
+			  <div class="search-parent">
+				<div class="search1">Search</div>
+				<img class="vector-icon" alt="" src="./public/vector.svg" />
+			  </div>
+			  <img class="search-child" alt="" src="./public/vector-4.svg" />
+			</button>
+		  </div>
+		  <header class="top-nav" id="top_nav">
+			<div class="bg-top-nav"></div>
+			<img
+			  class="icn-linkedin-icon"
+			  alt=""
+			  src="./public/icn-linkedin.svg"
 			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+  
+			<img class="icn-email-icon" alt="" src="./public/icn-email.svg" />
+  
+			<div class="telephone">
+			  <div class="div">+91 1234567890</div>
+			  <img class="icn-tel-icon" alt="" src="./public/icn-tel.svg" />
+			</div>
+			<img class="icn-events-icon" alt="" src="./public/icn-events.svg" />
+  
+			<img class="icn-career-icon" alt="" src="./public/icn-career.svg" />
+  
+			<button class="signin" autofocus="{true}">
+			  <div class="sign-in">Sign in</div>
+			  <img class="icn-signin-icon" alt="" src="./public/icn-signin.svg" />
+			</button>
+		  </header>
+		</div>
+	  </div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 484px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: #323232;
+  text-align: left;
+  display: inline-block;
+}
+.logo-samtone-ind-main-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 247px;
+  height: 100px;
+  object-fit: cover;
+}
+.company1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.company-child {
+  position: absolute;
+  height: 20%;
+  width: 6.82%;
+  top: 50%;
+  right: 0;
+  bottom: 30%;
+  left: 93.18%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.company {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 545px;
+  width: 88px;
+  height: 20px;
+}
+.products1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.products-child {
+  position: absolute;
+  height: 20%;
+  width: 7.23%;
+  top: 50%;
+  right: 0;
+  bottom: 30%;
+  left: 92.77%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.products {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 644px;
+  width: 83px;
+  height: 20px;
+}
+.applications1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+  display: inline-block;
+  width: 102px;
+  height: 23px;
+}
+.applications-child {
+  position: absolute;
+  height: 17.39%;
+  width: 5.41%;
+  top: 43.48%;
+  right: 0;
+  bottom: 39.13%;
+  left: 94.59%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.applications {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 738px;
+  width: 111px;
+  height: 23px;
+}
+.contact-us {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.contactus-child {
+  position: absolute;
+  height: 20%;
+  width: 5.94%;
+  top: 50%;
+  right: 0;
+  bottom: 30%;
+  left: 94.06%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.contactus {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 860px;
+  width: 101px;
+  height: 20px;
+}
+.search1 {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+  display: inline-block;
+  width: 56px;
+  height: 16px;
+}
+.vector-icon {
+  position: absolute;
+  height: 77.78%;
+  width: 19.44%;
+  top: 22.22%;
+  right: 80.56%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.search-child,
+.search-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 18px;
+}
+.search-child {
+  height: 22.22%;
+  width: 7.41%;
+  top: 55.56%;
+  right: 0;
+  bottom: 22.22%;
+  left: 92.59%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.search {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 972px;
+  width: 81px;
+  height: 18px;
+}
+.bg-top-nav,
+.main-nav {
+  position: absolute;
+  top: 60px;
+  left: 187px;
+  width: 1053px;
+  height: 100px;
+}
+.bg-top-nav {
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -90deg,
+    #fce7f0,
+    #fffde9 33.23%,
+    #e4f2e3 57.39%,
+    #d1eefc 85.27%
+  );
+  width: 1440px;
+  height: 60px;
+}
+.icn-email-icon,
+.icn-linkedin-icon {
+  position: absolute;
+  height: 33.33%;
+  width: 1.39%;
+  top: 46.67%;
+  right: 35.28%;
+  bottom: 20%;
+  left: 63.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icn-email-icon {
+  height: 28.33%;
+  width: 1.53%;
+  top: 50%;
+  right: 32.36%;
+  bottom: 21.67%;
+  left: 66.11%;
+}
+.div {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  font-weight: 500;
+}
+.icn-tel-icon {
+  position: absolute;
+  height: 95.05%;
+  width: 12.97%;
+  top: 4.95%;
+  right: 87.03%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.telephone {
+  position: absolute;
+  top: 27px;
+  left: 994px;
+  width: 148px;
+  height: 20.2px;
+}
+.icn-career-icon,
+.icn-events-icon {
+  position: absolute;
+  height: 36.67%;
+  width: 1.53%;
+  top: 45%;
+  right: 38.06%;
+  bottom: 18.33%;
+  left: 60.42%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icn-career-icon {
+  height: 41.67%;
+  width: 2.08%;
+  top: 41.67%;
+  right: 40.97%;
+  bottom: 16.67%;
+  left: 56.94%;
+}
+.sign-in {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-steelblue);
+  text-align: left;
+}
+.icn-signin-icon,
+.signin {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 17px;
+  height: 28.3px;
+}
+.signin {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 27px;
+  left: 1162px;
+  width: 78px;
+  height: 29.3px;
+}
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 60px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-steelblue);
+  font-family: var(--font-montserrat);
+}
+.header,
+.header1 {
+  height: 198px;
+  overflow: hidden;
+}
+.header1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+}
+.header {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+}
+@media screen and (max-width: 420px) {
+  .header1 {
+    width: 400px;
+    height: 198px;
+  }
+}
+
 </style>
